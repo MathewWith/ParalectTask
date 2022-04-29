@@ -1,0 +1,41 @@
+.header{
+    background-color: #0064EB;
+    height: 60px;
+    padding-left: 2%;
+    display: flex;
+    align-items: center;
+    &__icon{
+        width: 40px;
+        height: 40px;
+        color: white;
+    }
+    &__input-icon{
+        position: absolute;
+    }
+    &__search-panel {
+        position: relative;
+        width: 35%;
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 25px;
+          margin: auto 0;
+          width: 25px;
+          height: 25px;
+          background: url('https://st2.depositphotos.com/4060975/8056/v/600/depositphotos_80565476-stock-illustration-magnifier-vector-icon.jpg') no-repeat;
+          background-size: cover;
+        }
+        input {
+            width: 100%;
+            border-radius: 6px;
+            outline: none;
+            border: none;
+            padding: 10px 35px;
+            margin-left: 22px;
+            font-size: 14px;
+        }
+      }
+}
