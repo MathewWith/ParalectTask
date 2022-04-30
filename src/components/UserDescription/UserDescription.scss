@@ -1,0 +1,47 @@
+.user-info{
+    width: 40%;
+    padding: 39px 0 0 57px;
+    &__image{
+        width: 280px;
+        height: 280px;
+        border-radius: 100%;
+    }
+    &__name{
+        margin-top: 29px;
+    }
+    &__name::first-letter{
+        text-transform: uppercase;
+    }
+    &__login{
+        text-decoration: none;
+        font-size: 18px;
+        color: #0064EB;
+    }
+    .user-contacts{
+        display: flex;
+        &__followers{
+            display: flex;
+            align-items: center;
+            font-family: 'Inter';
+            &-icon{
+                padding-right: 5px;   
+            }
+            p{
+                padding-right: 3px;
+            }
+        }
+        &__following{
+            display: flex;
+            align-items: center;
+            margin-left: 10%;
+            font-family: 'Inter';
+            &-icon{
+                height: 13px;
+                padding-right: 3px;   
+            }
+            p{
+                padding-right: 3px;
+            }
+        }
+    }
+}
